@@ -3,483 +3,348 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-commerce Newsletter</title>
-
+    <title>Document</title>
     <style type="text/css">
-        body {
+        body{
             margin: 0;
-            padding: 0;
-            background-color: #504e4e;
+            background-color: #e4e3e3;
         }
 
-        table {
+         table {
             border-spacing: 0;
-        }
+         }
 
-        td {
-            margin: 0;
-            padding: 0;
-        }
+         .wrapper {
+            width: 100%;
+            table-layout: fixed;
+            padding-bottom: 60px;
+            background-color: #bcbcbc;
+         }
 
-        img {
-            display: block;
-            border: 0;
-        }
-
-        p, 
-        h1,
-        h2, 
-        h3,
-        h4, 
-        h5 {
-            margin: 0;
-            padding: 0;
-        }
-
-        .main-container {
-            width: 600px;
-            max-width: 100%;
+         .container {
+            width: 100%;
+            max-width: 600px;
             margin: 0 auto;
             padding: 0;
-            border-spacing: 0;
-            border-collapse: collapse;
             background-color: #ffffff;
-            font-family: Arial, sans-serif;
+            font-family: "poppins", sans-serif;
+            text-align: center;
+            border-spacing: 0;
+         }
+
+         td {
+            padding: 0;
+            margin: 0;
+         }
+
+         img {
+            border: 0;
+            display: block;
+         }
+
+         p, h2 {
+            margin: 0;
+         }
+
+        .hero-content {
+            font-size: 0;
         }
 
-        .container {
-            width: 100%;
-            padding-bottom: 40px;
-        }
-       
-       .nav-content {
-        width: 300px;
-        text-align: center;
+       .hero-section .hero-content {
+        width: 100%;
+        max-width: 297px;
+        display: inline-block;
+        font-size: 16px;
        }
 
-       .nav-container .nav-content {
+       .three-column .column{
+        max-width: 180px;
+        width: 100%;
         display: inline-block;
         vertical-align: middle;
-        width: 100%;
        }
-        
+  
     </style>
 </head>
 <body>
-    <center class="container">
-        
-        <table width="0" 
-        cellpadding="0"
-        cellspacing="0"
-         class="main-container"
-         style="background-color: #ffffff;"
-         >
-
-        <tr>
-            <td class="nav-container" style="padding: 12px 0;">
-        
-                <table width="600" cellpadding="0" cellspacing="0" border="0" style="
-                        width: 100%;
-                        max-width: 600px;
-                        border-spacing: 0;
-                        border-collapse: collapse;
-                    ">
-                    <tr>
-        
-                        <td class="nav-content" align="left" width="50%" style="width: 50%;">
-                         
-                            <img src="https://res.cloudinary.com/qyksrgfe/image/upload/v1788868389/menu-icon_brnrty.png"
-                                alt="Menu" width="30" style="
-                                    display: block;
-                                    width: 30px;
-                                    max-width: 30px;
-                                    padding-left: 26px;
-                                ">
-                        </td>
-        
-                        <td class="nav-content" align="left" width="50%" 
-                         style="width: 50%; ">
-                            <a href="#">
-                                <img src="https://res.cloudinary.com/qyksrgfe/image/upload/v1788868407/search-icon_ccblql.png"
-                                    alt="Search" width="30" style="
-                                        display: inline-block;
-                                        width: 30px;
-                                        max-width: 30px;
-                                    ">
-                            </a>
-        
-                            <a href="#">
-                                <img src="https://res.cloudinary.com/qyksrgfe/image/upload/v1788868420/cart-icon_dj5645.png"
-                                alt="Cart" width="30" style="
-                                 display: inline-block;
-                                 width: 30px;
-                                 max-width: 30px;
-                                 padding: 0 20px;
-                                    ">
-                            </a>
-                        </td>
-
-                        
-                    </tr>
-                </table>
-            </td>
-        </tr>
-
-         <!-- <tr>
-            <td align="center" class="promotional-banner" 
-             style="background-color: #BA4533;
-             color: #ffffff;
-             padding: 8px 0;
-             font-size: 12px;
-             "> 
-                <p>
-                    90-DAYS 100% MONEY BACK GUARANTEE
-                </p>
-            </td>
-         </tr> -->
-
+    <center class="wrapper">
+     <table width="100%" 
+     cellpadding="0" cellspacing="0" border="0"
+     class="container"
+     style="background-color: #ffffff;"
+     >
          
-         <tr>
-            <td class="hero-section">
-
-                <table width="600" class="hero-container" 
-                style="max-width: 600px;
-                width: 100%;
-                "
-                >
-                    <tr>
-                        <td style="display: inline-block; 
-                        max-width: 300px;
-                        width: 100%;
-                        ">
-                            <img src="https://res.cloudinary.com/qyksrgfe/image/upload/v1788869657/hero-image_qhh8d8.png" 
-                            alt=""
-                            style="max-width: 300px;
-                            width: 300px;"
-                            >
-                        </td>
-
-                        <td class="hero-content"
-                        style="background-color: #5355CE;
-                        color: #ffffff;
-                        max-width: 300px;
-                        width: 300px;
-                        height: 365px;
-                        display: inline-block;
-                        "
-                        >
-                            <p style="padding: 20px 18px; font-size: 18px;">
-                                New Collection
-                            </p>
-
-                            <h1 style="font-size: 24px; padding: 0 17px; line-height: 1.4;">
-                                Summer Sale is Here! Limited Stock
-                            </h1>
-
-                            <p style="font-size: 16px; 
-                             font-weight: 600;
-                              padding: 10px 18px;
-                             ">
-                                Save up to 70%
-                            </p>
-
-                            <p style="padding: 12px 20px; line-height: 1.4;">
-                                On our best-selling products. Limited-time offer.
-                            </p>
-
-            <!--VML button-->
-            <table  border="0" cellpadding="0" cellspacing="0" role="presentation"
-                style="border-collapse:separate;line-height:100%;
-                padding: 20px 18px;
-                ">
+        <!-- Nav bar -->
+    <tr>
+        <td style="padding: 8px 28px;">
+            <table width="100%" border="0" cellpadding="0" cellspacing="0">
                 <tr>
-                    <td>
-                        <div>
-                            <!--[if mso]> <v:roundrect xmlns_v="urn:schemas-microsoft-com:vml" xmlns_w="urn:schemas-microsoft-com:office:word" href="https://www.activecampaign.com" style="height:40px;v-text-anchor:middle;width:130px;" arcsize="5%" strokecolor="#19cca3" fillcolor="#19cca3;width: 130;"> <w:anchorlock/> <center style="color:#ffffff;font-family:Helvetica, sans-serif;font-size:18px; font-weight: 600;">Click here!</center> </v:roundrect> <![endif]-->
-                            <a href="https://www.activecampaign.com"
-                                style="display: inline-block; mso-hide:all; background-color: #ffffff; color: #5355CE; border:none; border-radius: 6px; line-height: 220%; width: 113px; font-family: Helvetica, sans-serif; font-size:18px; font-weight:500; text-align: center; text-decoration: none; -webkit-text-size-adjust:none; "
-                                target="_blank">Shop Now!</a> </a> </div>
+                    <!-- Left: Hamburger Menu -->
+                    <td align="left" style="vertical-align: middle;">
+                        <table border="0" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td>
+                                    <a href="#">
+                                        <img src="https://res.cloudinary.com/qyksrgfe/image/upload/v1788868389/menu-icon_brnrty.png"
+                                            width="26" alt="Hamburger icon" style="display: block;">
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+    
+                    <!-- Right: Search & Cart Icons -->
+                    <td align="right" style="vertical-align: middle;">
+                        <table border="0" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td style="padding-right: 15px;">
+                                    <a href="#">
+                                        <img src="https://res.cloudinary.com/qyksrgfe/image/upload/v1788868407/search-icon_ccblql.png"
+                                            width="28" alt="Search icon" style="display: block;">
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="#">
+                                        <img src="https://res.cloudinary.com/qyksrgfe/image/upload/v1788868420/cart-icon_dj5645.png"
+                                            width="28" alt="Cart icon" style="display: block;">
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
                     </td>
                 </tr>
             </table>
+        </td>
+    </tr>
 
-                        </td>
-                    </tr>
-                </table>
-            </td>
-         </tr>
+            <!-- Banner section -->
+             <tr>
+                <td style="background-color: #BA4533;
+                           color: #ffffff; font-size: 12px;
+                           padding: 8px 0;">
+                    <p >90-DAYS 100% MONEY BACK GUARANTEE</p>
+                </td>
+             </tr>
 
-        <tr>
-            <td class="three-column-section" style="color: #3a3a3a;" align="center">
-               
-                <table width="600" class="three-container"
-                    style="max-width: 600px; width: 100%; margin: 0 auto; text-align: center;" cellpadding="0" cellspacing="0"
-                    border="0">
-                   
-                    <tr>
-                        <td align="center" style="padding: 40px 0 20px;">
-                            <p style="text-align: center; font-size: 24px; font-weight: 400; color: #3a3a3a; margin: 0;">
-                                Popular product
-                            </p>
-                        </td>
-                    </tr>
-        
-                  
-                    <tr>
-                        <td align="center" style="padding: 0 0 40px; font-size: 0; text-align: center;">
-                            <!--[if mso]>
-                            <table border="0" cellspacing="0" cellpadding="0" align="center" width="600">
-                            <tr>
-                            <td align="center" valign="top" width="200">
-                            <![endif]-->
-        
-                            <div class="column"
-                                style="display: inline-block; width: 100%; max-width: 200px; vertical-align: top; text-align: center;">
-                                <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%"
-                                    style="max-width: 200px;">
-                                    <tr>
-                                        <td align="center" style="padding: 10px;">
-                                            <img src="https://res.cloudinary.com/qyksrgfe/image/upload/v1788914366/grid1_m6gxer.png"
-                                                alt="man in shirt" width="180"
-                                                style="width: 100%; max-width: 180px; height: auto; display: block;">
-                                            <p style="padding: 14px 0 0; margin: 0; text-align: center; font-size: 14px;">
-                                                Men's Collection
-                                            </p>
-                                            <p style="font-size: 12px; padding: 8px 0 0; margin: 0; text-align: center;">
-                                                Best Seller
-                                            </p>
-                                            <p style="margin: 8px 0 0; text-align: center;">
-                                                <a href="#"
-                                                    style="font-size: 12px; text-decoration: none; color: #5355CE; display: inline-block;">
-                                                    Explore Collection
-                                                    <img src="https://res.cloudinary.com/qyksrgfe/image/upload/v1788914824/arrow_sh8hfs.png"
-                                                        alt="arrow icon" width="14"
-                                                        style="display: inline-block; vertical-align: middle;">
-                                                </a>
-                                            </p>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </div>
-        
-                            <!--[if mso]>
-                            </td>
-                            <td align="center" valign="top" width="200">
-                            <![endif]-->
-        
-                            <div class="column"
-                                style="display: inline-block; width: 100%; max-width: 200px; vertical-align: top; text-align: center;">
-                                <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%"
-                                    style="max-width: 200px;">
-                                    <tr>
-                                        <td align="center" style="padding: 10px;">
-                                            <img src="https://res.cloudinary.com/qyksrgfe/image/upload/v1788914403/grid2_bs0wlr.png"
-                                                alt="woman in gown" width="180"
-                                                style="width: 100%; max-width: 180px; height: auto; display: block;">
-                                            <p style="padding: 14px 0 0; margin: 0; text-align: center; font-size: 14px;">
-                                                Women's Collection
-                                            </p>
-                                            <p style="font-size: 12px; padding: 8px 0 0; margin: 0; text-align: center;">
-                                                Trending
-                                            </p>
-                                            <p style="margin: 8px 0 0; text-align: center;">
-                                                <a href="#"
-                                                    style="font-size: 12px; text-decoration: none; color: #5355CE; display: inline-block;">
-                                                    Explore Collection
-                                                    <img src="https://res.cloudinary.com/qyksrgfe/image/upload/v1788914824/arrow_sh8hfs.png"
-                                                        alt="arrow icon" width="14"
-                                                        style="display: inline-block; vertical-align: middle;">
-                                                </a>
-                                            </p>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </div>
-        
-                            <!--[if mso]>
-                            </td>
-                            <td align="center" valign="top" width="200">
-                            <![endif]-->
-        
-                            <div class="column"
-                                style="display: inline-block; width: 100%; max-width: 200px; vertical-align: top; text-align: center;">
-                                <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%"
-                                    style="max-width: 200px;">
-                                    <tr>
-                                        <td align="center" style="padding: 10px;">
-                                            <img src="https://res.cloudinary.com/qyksrgfe/image/upload/v1788914421/grid3_idx76v.png"
-                                                alt="man in shirt" width="180"
-                                                style="width: 100%; max-width: 180px; height: auto; display: block;">
-                                            <p style="padding: 14px 0 0; margin: 0; text-align: center; font-size: 14px;">
-                                                Men's Collection
-                                            </p>
-                                            <p style="font-size: 12px; padding: 8px 0 0; margin: 0; text-align: center;">
-                                                Best Seller
-                                            </p>
-                                            <p style="margin: 8px 0 0; text-align: center;">
-                                                <a href="#"
-                                                    style="font-size: 12px; text-decoration: none; color: #5355CE; display: inline-block;">
-                                                    Explore Collection
-                                                    <img src="https://res.cloudinary.com/qyksrgfe/image/upload/v1788914824/arrow_sh8hfs.png"
-                                                        alt="arrow icon" width="14"
-                                                        style="display: inline-block; vertical-align: middle;">
-                                                </a>
-                                            </p>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </div>
-        
-                            <!--[if mso]>
-                            </td>
-                            </tr>
+<!-- Hero Section -->
+             <tr>
+                <td class="hero-container">
+                    <table width="100%" cellpadding="0" cellspacing="0" border="0">
+
+                     <tr>
+                        <td class="hero-section">
+
+                            <table class="hero-content" cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                    <td>
+                                        <img src="https://res.cloudinary.com/qyksrgfe/image/upload/v1788869657/hero-image_qhh8d8.png" width="300" border="0"
+                                            alt="Female image" style="display: block; width: 100%; max-width: 300px; border: 0;">
+                                    </td>
+                                </tr>
                             </table>
-                            <![endif]-->
-                        </td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
 
-        <tr>
-            <td class="three-column-section" 
-             style="color: #3a3a3a;" align="center
-              
-             ">
-        
-                <table width="600" class="three-container"
-                    style="max-width: 600px; width: 100%; margin: 0 auto; text-align: center;" cellpadding="0" cellspacing="0"
-                    border="0">
-        
-                    <tr>
-                        <td align="center" style="padding: 40px 0 20px;">
-                            <p style="text-align: center; font-size: 24px; font-weight: 400; color: #3a3a3a; margin: 0;">
-                                Best Deals for You
-                            </p>
+                            <table class="hero-content" style="background-color: #5355CE; color: #ffffff; height: 365px;">
+                                <tr>
+                                    <td class="padding" style="padding: 32px 0 0 18px;">
+                                        <table class="hero-text">
+                                            <tr>
+                                                <td align="left">
+                                                    <p style="font-size: 18px;">New collection</p>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td align="left" style="padding: 20px  0 12px;">
+                                                    <h2 style="line-height: 1.4; font-size: 24px;">Summer Sale is Here! Limited Stock</h2>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td align="left" style="padding: 0 0 16px 0;">
+                                                    <p style="font-weight: bold;">Save up to 70%</p>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td align="left">
+                                                   <p style="line-height: 1.4;"> On our best-selling products. Limited-time offer.</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="padding-top: 26px;">
+                                            <table border="0" cellpadding="0" cellspacing="0" role="presentation"
+                                                style="border-collapse:separate;line-height:100%;">
+                                                <tr>
+                                                    <td>
+                                                        <div>
+                                                            <!--[if mso]> <v:roundrect xmlns_v="urn:schemas-microsoft-com:vml xmlns_w="urn:schemas-microsoft-com:office:word" href="#" style="height:40px;v-text-anchor:middle;width:113px;" arcsize="5%" strokecolor="none" fillcolor="#ffffff;width: 113px;"> <w:anchorlock/> <center style="color:#ffffff;font-family:Helvetica, sans-serif;font-size:16px; font-weight: 600;">Click here!</center> </v:roundrect> <![endif]-->
+                                                            <a href="#"
+                                                                style="display: inline-block; mso-hide:all; background-color: #ffffff; color: #5355CE; border: none; border-radius: 6px; line-height: 220%; width: 113px; font-family: Helvetica, sans-serif; font-size:16px; font-weight:600; text-align: center; text-decoration: none; -webkit-text-size-adjust:none; "
+                                                                target="_blank">Shop Now</a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+
+                                    </td>
+                                </tr>
+                            </table>
+
                         </td>
-                    </tr>
-        
-        
-                    <tr>
-                        <td align="center" style="padding: 0 0 40px; font-size: 0; text-align: center;">
-                            <!--[if mso]>
-                                    <table border="0" cellspacing="0" cellpadding="0" align="center" width="600">
+                     </tr>
+
+                    </table>
+                </td>
+             </tr>
+
+             <tr>
+                <td align="center" style="background-color: #f2f2f2;
+                            padding: 24px  0 0;">
+                    <p style="font-size: 24px ;">Popular product</p>
+                </td>
+             </tr>
+
+             <tr>
+                <td class="" style="padding: 24px 16px; background-color: #f2f2f2;">
+                    <table width="100%" class="three-column">
+
+                        <tr>
+                            <td class="three-column">
+                                <table class="column" style="padding-bottom: 30px;">
                                     <tr>
-                                    <td align="center" valign="top" width="200">
-                                    <![endif]-->
-        
-                            <div class="column"
-                                style="display: inline-block; width: 100%; max-width: 200px; vertical-align: top; text-align: center;">
-                                <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%"
-                                    style="max-width: 200px;">
+                                        <td>
+                                            <a href="#">
+                                                <img src="https://res.cloudinary.com/qyksrgfe/image/upload/v1788914366/grid1_m6gxer.png"
+                                                width="170"
+                                                alt="">
+                                            </a>
+                                        </td>
+                                    </tr>
                                     <tr>
-                                        <td align="center" style="padding: 10px;">
-                                            <img src="https://res.cloudinary.com/qyksrgfe/image/upload/v1788914366/grid1_m6gxer.png"
-                                                alt="man in shirt" width="180"
-                                                style="width: 100%; max-width: 180px; height: auto; display: block;">
-                                            <p style="padding: 14px 0 0; margin: 0; text-align: center; font-size: 14px;">
-                                                Men's Collection
-                                            </p>
-                                            <p style="font-size: 12px; padding: 8px 0 0; margin: 0; text-align: center;">
-                                                Best Seller
-                                            </p>
-                                            <p style="margin: 8px 0 0; text-align: center;">
-                                                <a href="#"
-                                                    style="font-size: 12px; text-decoration: none; color: #5355CE; display: inline-block;">
+                                        <td align="left" style="padding: 8px 0;">
+                                            <p style="font-size: 16px;"> Men's Collection</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left" style="padding: 0 0 8px;">
+                                            <p>Best Seller</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left">
+                                            <p>
+                                                <a href="#" style="text-decoration: none;
+                                                  color: #5355CE; font-weight: 500;
+                                                ">
                                                     Explore Collection
-                                                    <img src="https://res.cloudinary.com/qyksrgfe/image/upload/v1788914824/arrow_sh8hfs.png"
-                                                        alt="arrow icon" width="14"
-                                                        style="display: inline-block; vertical-align: middle;">
+                                                    <img src="https://res.cloudinary.com/qyksrgfe/image/upload/v1788914824/arrow_sh8hfs.png" alt="" width="14" style="display: inline-block;">
                                                 </a>
                                             </p>
+                                            
                                         </td>
                                     </tr>
                                 </table>
-                            </div>
-        
-                            <!--[if mso]>
-                                    </td>
-                                    <td align="center" valign="top" width="200">
-                                    <![endif]-->
-        
-                            <div class="column"
-                                style="display: inline-block; width: 100%; max-width: 200px; vertical-align: top; text-align: center;">
-                                <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%"
-                                    style="max-width: 200px;">
+
+                                <table class="column" style="padding-bottom: 30px;">
                                     <tr>
-                                        <td align="center" style="padding: 10px;">
-                                            <img src="https://res.cloudinary.com/qyksrgfe/image/upload/v1788914403/grid2_bs0wlr.png"
-                                                alt="woman in gown" width="180"
-                                                style="width: 100%; max-width: 180px; height: auto; display: block;">
-                                            <p style="padding: 14px 0 0; margin: 0; text-align: center; font-size: 14px;">
-                                                Women's Collection
-                                            </p>
-                                            <p style="font-size: 12px; padding: 8px 0 0; margin: 0; text-align: center;">
-                                                Trending
-                                            </p>
-                                            <p style="margin: 8px 0 0; text-align: center;">
-                                                <a href="#"
-                                                    style="font-size: 12px; text-decoration: none; color: #5355CE; display: inline-block;">
+                                        <td align="left">
+                                            <a href="#">
+                                                <img src="https://res.cloudinary.com/qyksrgfe/image/upload/v1788914403/grid2_bs0wlr.png" width="170"
+                                                    alt="">
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left" style="padding: 8px 0;">
+                                            <p style="font-size: 16px;">Women's Collection</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left" style="padding: 0 0 8px;">
+                                            <p>Trending</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left">
+                                            <p>
+                                                <a href="#" style="text-decoration: none;
+                                                                                  color: #5355CE; font-weight: 500;
+                                                                                ">
                                                     Explore Collection
-                                                    <img src="https://res.cloudinary.com/qyksrgfe/image/upload/v1788914824/arrow_sh8hfs.png"
-                                                        alt="arrow icon" width="14"
-                                                        style="display: inline-block; vertical-align: middle;">
+                                                    <img src="https://res.cloudinary.com/qyksrgfe/image/upload/v1788914824/arrow_sh8hfs.png" alt=""
+                                                        width="14" style="display: inline-block;">
                                                 </a>
                                             </p>
+                                
                                         </td>
                                     </tr>
                                 </table>
-                            </div>
-        
-                            <!--[if mso]>
-                                    </td>
-                                    <td align="center" valign="top" width="200">
-                                    <![endif]-->
-        
-                            <div class="column"
-                                style="display: inline-block; width: 100%; max-width: 200px; vertical-align: top; text-align: center;">
-                                <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%"
-                                    style="max-width: 200px;">
+
+                                <table class="column" style="padding-bottom: 16px;">
                                     <tr>
-                                        <td align="center" style="padding: 10px;">
-                                            <img src="https://res.cloudinary.com/qyksrgfe/image/upload/v1788914421/grid3_idx76v.png"
-                                                alt="man in shirt" width="180"
-                                                style="width: 100%; max-width: 180px; height: auto; display: block;">
-                                            <p style="padding: 14px 0 0; margin: 0; text-align: center; font-size: 14px;">
-                                                Men's Collection
-                                            </p>
-                                            <p style="font-size: 12px; padding: 8px 0 0; margin: 0; text-align: center;">
-                                                Best Seller
-                                            </p>
-                                            <p style="margin: 8px 0 0; text-align: center;">
-                                                <a href="#"
-                                                    style="font-size: 12px; text-decoration: none; color: #5355CE; display: inline-block;">
+                                        <td>
+                                            <a href="#">
+                                                <img src="https://res.cloudinary.com/qyksrgfe/image/upload/v1788914421/grid3_idx76v.png" width="170"
+                                                    alt="">
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left" style="padding: 8px 0;">
+                                            <p>Accessories</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left" style="padding: 0 0 8px;">
+                                            <p>Limited</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left">
+                                            <p>
+                                                <a href="#" style="text-decoration: none;
+                                                            color: #5355CE; font-weight: 500;
+                                                                                ">
                                                     Explore Collection
-                                                    <img src="https://res.cloudinary.com/qyksrgfe/image/upload/v1788914824/arrow_sh8hfs.png"
-                                                        alt="arrow icon" width="14"
-                                                        style="display: inline-block; vertical-align: middle;">
+                                                    <img src="https://res.cloudinary.com/qyksrgfe/image/upload/v1788914824/arrow_sh8hfs.png" alt=""
+                                                        width="14" style="display: inline-block;">
                                                 </a>
                                             </p>
+                                
                                         </td>
                                     </tr>
                                 </table>
-                            </div>
-        
-                            <!--[if mso]>
-                                    </td>
-                                    </tr>
-                                    </table>
-                                    <![endif]-->
-                        </td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
+
+
+                            </td>
+                        </tr>
+
+                    </table>
+                </td>
+             </tr>
+
+             <tr>
+                <td align="center" style="padding: 40px 0 24px;">
+                    <p style="font-size: 24px;">Best Deals for You</p>
+                </td>
+             </tr>
+
+             <tr>
+                <td class="three-column">
+                    <table width="100%">
 
 
 
 
-        </table>
+                        
+                    </table>
+                </td>
+             </tr>
+
+     </table>
     </center>
 </body>
 </html>
