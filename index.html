@@ -30,6 +30,7 @@
             font-family: "poppins", sans-serif;
             text-align: center;
             border-spacing: 0;
+            border: none;
          }
 
          td {
@@ -42,26 +43,44 @@
             display: block;
          }
 
-         p, h2 {
+         p, h2, h3 {
             margin: 0;
          }
 
-        .hero-content {
+        .hero-container {
             font-size: 0;
         }
 
        .hero-section .hero-content {
         width: 100%;
-        max-width: 297px;
+        max-width: 300px;
         display: inline-block;
+        vertical-align: middle;
         font-size: 16px;
        }
 
+       .three-column {
+        font-size: 0;
+       }
+
        .three-column .column{
-        max-width: 180px;
+        max-width: 189px;
         width: 100%;
         display: inline-block;
         vertical-align: middle;
+        font-size: 16px;
+       }
+
+       .four-column {
+        font-size: 0;
+       }
+
+       .four-column .column {
+         font-size: 16px;
+         display: inline-block;
+         vertical-align: bottom;
+         max-width: 100px;
+         width: 100%;
        }
   
     </style>
@@ -69,9 +88,10 @@
 <body>
     <center class="wrapper">
      <table width="100%" 
-     cellpadding="0" cellspacing="0" border="0"
+     cellspacing="0" 
+     cellpadding="0"
      class="container"
-     style="background-color: #ffffff;"
+     style="background-color: #ffffff; border: 0; border-collapse: collapse;"
      >
          
         <!-- Nav bar -->
@@ -132,21 +152,21 @@
                     <table width="100%" cellpadding="0" cellspacing="0" border="0">
 
                      <tr>
-                        <td class="hero-section">
+                        <td class="hero-section" style="background-color: #f05656;">
 
                             <table class="hero-content" cellpadding="0" cellspacing="0" border="0">
                                 <tr>
                                     <td>
-                                        <img src="https://res.cloudinary.com/qyksrgfe/image/upload/v1788869657/hero-image_qhh8d8.png" width="300" border="0"
-                                            alt="Female image" style="display: block; width: 100%; max-width: 300px; border: 0;">
+                                        <img src="https://res.cloudinary.com/qyksrgfe/image/upload/v1788869657/hero-image_qhh8d8.png" border="0"
+                                            alt="Female image" style="display: block; width: 100%; max-width: 300px; border: 0; height: 365px;">
                                     </td>
                                 </tr>
                             </table>
 
-                            <table class="hero-content" style="background-color: #5355CE; color: #ffffff; height: 365px;">
+                            <table class="hero-content" style="background-color: #5355CE; color: #ffffff; height: 365px; width: 300px;">
                                 <tr>
                                     <td class="padding" style="padding: 32px 0 0 18px;">
-                                        <table class="hero-text">
+                                        <table class="hero-text" >
                                             <tr>
                                                 <td align="left">
                                                     <p style="font-size: 18px;">New collection</p>
@@ -209,7 +229,7 @@
 
              <tr>
                 <td class="" style="padding: 24px 16px; background-color: #f2f2f2;">
-                    <table width="100%" class="three-column">
+                    <table width="100%">
 
                         <tr>
                             <td class="three-column">
@@ -283,7 +303,7 @@
                                     </tr>
                                 </table>
 
-                                <table class="column" style="padding-bottom: 16px;">
+                                <table class="column" style="padding-bottom: 30px;">
                                     <tr>
                                         <td>
                                             <a href="#">
@@ -294,7 +314,7 @@
                                     </tr>
                                     <tr>
                                         <td align="left" style="padding: 8px 0;">
-                                            <p>Accessories</p>
+                                            <p style="font-size: 16px;">Accessories</p>
                                         </td>
                                     </tr>
                                     <tr>
@@ -333,14 +353,244 @@
              </tr>
 
              <tr>
-                <td class="three-column">
+                <td style="padding: 8px 0 40px;">
                     <table width="100%">
 
+                        <tr>
+                            <td class="three-column">
+                            <table class="column" style="padding-bottom: 30px;">
+                                <tr>
+                                    <td>
+                                        <a href="#">
+                                            <img src="https://res.cloudinary.com/qyksrgfe/image/upload/v1788920514/shoe_meyq1i.png" 
+                                            width="173"
+                                            alt="">
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="left">
+                                        <p>Awesome Shoes</p>
+                                        <p>$89</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="left">
+                                        <p>Now $59 <span style="color: #5355CE;">-33.7%</span></p>
+                                    </td>
+                                </tr>
 
+                                <tr>
+                                    <td>
+                                        <table border="0" cellpadding="0" cellspacing="0" role="presentation"
+                                            style="border-collapse:separate;line-height:100%;">
+                                            <tr>
+                                                <td>
+                                                    <div>
+                                                        <!--[if mso]> <v:roundrect xmlns_v="urn:schemas-microsoft-com:vml" xmlns_w="urn:schemas-microsoft-com:office:word" href="https://www.activecampaign.com" style="height:40px;v-text-anchor:middle;width:130px;" arcsize="5%" strokecolor="#none" fillcolor="#5355CE";width: 99;"> <w:anchorlock/> <center style="color:#ffffff;font-family:Helvetica, sans-serif;font-size:18px; font-weight: 600;">Add To Cart</center> </v:roundrect> <![endif]-->
+                                                        <a href="https://www.activecampaign.com"
+                                                            style="display: inline-block; mso-hide:all; background-color:#5355CE; color: #FFFFFF; border:none; border-radius: 6px; line-height: 220%; width: 99px; font-family: Helvetica, sans-serif; font-size:12px; font-weight:600; text-align: center; text-decoration: none; -webkit-text-size-adjust:none; "
+                                                            target="_blank">Add To Cart</a> </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                            
+                            <table class="column">
+                                <tr>
+                                    <td>
+                                        <a href="#">
+                                            <img src="https://res.cloudinary.com/qyksrgfe/image/upload/v1788920535/watch_kinmx9.png" width="173"
+                                                alt="">
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="left">
+                                        <p>Awesome Shoes</p>
+                                        <p>$89</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="left">
+                                        <p>Now $59 <span style="color: #5355CE;">-33.7%</span></p>
+                                    </td>
+                                </tr>
+                            
+                                <tr>
+                                    <td>
+                                        <table border="0" cellpadding="0" cellspacing="0" role="presentation"
+                                            style="border-collapse:separate;line-height:100%;">
+                                            <tr>
+                                                <td>
+                                                    <div>
+                                                        <!--[if mso]> <v:roundrect xmlns_v="urn:schemas-microsoft-com:vml" xmlns_w="urn:schemas-microsoft-com:office:word" href="https://www.activecampaign.com" style="height:40px;v-text-anchor:middle;width:130px;" arcsize="5%" strokecolor="#none" fillcolor="#5355CE";width: 99;"> <w:anchorlock/> <center style="color:#ffffff;font-family:Helvetica, sans-serif;font-size:18px; font-weight: 600;">Add To Cart</center> </v:roundrect> <![endif]-->
+                                                        <a href="https://www.activecampaign.com"
+                                                            style="display: inline-block; mso-hide:all; background-color:#5355CE; color: #FFFFFF; border:none; border-radius: 6px; line-height: 220%; width: 99px; font-family: Helvetica, sans-serif; font-size:12px; font-weight:600; text-align: center; text-decoration: none; -webkit-text-size-adjust:none; "
+                                                            target="_blank">Add To Cart</a> </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
 
+                            <table class="column">
+                                <tr>
+                                    <td>
+                                        <a href="#">
+                                            <img src="https://res.cloudinary.com/qyksrgfe/image/upload/v1788920483/bag_y0dgdi.png" width="173"
+                                                alt="">
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="left">
+                                        <p>Awesome Shoes</p>
+                                        <p>$89</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="left">
+                                        <p>Now $59 <span style="color: #5355CE;">-33.7%</span></p>
+                                    </td>
+                                </tr>
+                            
+                                <tr>
+                                    <td>
+                                        <table border="0" cellpadding="0" cellspacing="0" role="presentation"
+                                            style="border-collapse:separate;line-height:100%;">
+                                            <tr>
+                                                <td>
+                                                    <div>
+                                                        <!--[if mso]> <v:roundrect xmlns_v="urn:schemas-microsoft-com:vml" xmlns_w="urn:schemas-microsoft-com:office:word" href="https://www.activecampaign.com" style="height:40px;v-text-anchor:middle;width:130px;" arcsize="5%" strokecolor="#none" fillcolor="#5355CE";width: 99;"> <w:anchorlock/> <center style="color:#ffffff;font-family:Helvetica, sans-serif;font-size:18px; font-weight: 600;">Add To Cart</center> </v:roundrect> <![endif]-->
+                                                        <a href="https://www.activecampaign.com"
+                                                            style="display: inline-block; mso-hide:all; background-color:#5355CE; color: #FFFFFF; border:none; border-radius: 6px; line-height: 220%; width: 99px; font-family: Helvetica, sans-serif; font-size:12px; font-weight:600; text-align: center; text-decoration: none; -webkit-text-size-adjust:none; "
+                                                            target="_blank">Add To Cart</a> </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
 
-                        
+                            </td>
+                        </tr>
                     </table>
+                </td>
+             </tr>
+
+          
+             <tr>
+                <td style="padding: 0;">
+                    <table width="100%" style="background-image: url(https://res.cloudinary.com/qyksrgfe/image/upload/v1789175945/banner_jnwg8j.png);
+                    background-repeat: no-repeat/cover;
+                    height: 200px;
+                    color: #ffffff;
+                    text-align: center;
+                    ">
+                        <tr>
+                            <td style="padding: 32px 0 0;">
+                                <h3 style="font-size: 24px; margin-bottom: 8px;">
+                                    Hurry! Sale Ends Soon</h3>
+                                <p>Don't miss out on exclusive savings. Offer expires in 48 hours</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center" style="padding-bottom: 32px;">
+                        <table border="0" cellpadding="0" cellspacing="0" role="presentation"
+                            style="border-collapse:separate;line-height:100%;">
+                            <tr>
+                                <td>
+                                    <div>
+                                        <!--[if mso]> <v:roundrect xmlns_v="urn:schemas-microsoft-com:vml" xmlns_w="urn:schemas-microsoft-com:office:word" href="#" style="height:40px;v-text-anchor:middle;width:130px;" arcsize="5%" strokecolor="none" fillcolor="#ffffff;width: 140;"> <w:anchorlock/> <center style="color:#5355CE;font-family:Helvetica, sans-serif;font-size:18px; font-weight: 600;">View Products</center> </v:roundrect> <![endif]-->
+                                        <a href="#"
+                                            style="display: inline-block; mso-hide:all; background-color:#ffffff; color: #5355CE; border:none; border-radius: 6px; line-height: 220%; width: 140px; font-family: Helvetica, sans-serif; font-size:16px; font-weight:600; text-align: center; text-decoration: none; -webkit-text-size-adjust:none; "
+                                            target="_blank">View Products</a> </a> </div>
+                                </td>
+                            </tr>
+                        </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+             </tr>
+
+             <tr>
+                <td style="padding: 40px 10px;">
+                    <table width="100%">
+
+                        <tr>
+                            <td class="four-column">
+                                <table class="column">
+                                    <tr>
+                                        <td>
+                                            <a href="#">
+                                                <img src="https://res.cloudinary.com/qyksrgfe/image/upload/v1789179088/truck_hnu3ib.png"
+                                                width="57"
+                                                alt="">
+                                            </a>
+                                            <span>Free Shipping</span>
+                                        </td>
+                                    </tr>
+                                </table>
+
+                                <table class="column">
+                                    <tr>
+                                        <td>
+                                            <a href="#">
+                                                <img src="https://res.cloudinary.com/qyksrgfe/image/upload/v1789179088/truck_hnu3ib.png" width="57"
+                                                    alt="">
+                                            </a>
+                                            <span>Free Shipping</span>
+                                        </td>
+                                    </tr>
+                                </table>
+
+                                <table class="column">
+                                    <tr>
+                                        <td>
+                                            <a href="#">
+                                                <img src="https://res.cloudinary.com/qyksrgfe/image/upload/v1789179088/truck_hnu3ib.png" width="57"
+                                                    alt="">
+                                            </a>
+                                            <span>Free Shipping</span>
+                                        </td>
+                                    </tr>
+                                </table>
+
+                                <table class="column">
+                                    <tr>
+                                        <td>
+                                            <a href="#">
+                                                <img src="https://res.cloudinary.com/qyksrgfe/image/upload/v1789179088/truck_hnu3ib.png" width="57"
+                                                    alt="">
+                                            </a>
+                                            <span>Free Shipping</span>
+                                        </td>
+                                    </tr>
+                                </table>
+
+                                <table class="column">
+                                    <tr>
+                                        <td>
+                                            <a href="#">
+                                                <img src="https://res.cloudinary.com/qyksrgfe/image/upload/v1789179088/truck_hnu3ib.png" width="57"
+                                                    alt="">
+                                            </a>
+                                            <span>Free Shipping</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+
                 </td>
              </tr>
 
