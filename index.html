@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"><!--<![endif]-->
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="color-scheme" content="light dark">
+    <meta name="supported-color-schemes">
+    <title>Promotional Email</title>
     <style type="text/css">
         body{
             margin: 0;
@@ -98,11 +100,74 @@
         display: inline-block;
         vertical-align: middle;
        }
-  
+
+       .dark-img {
+        display: none !important;
+       }
+
+       .dark-arrow {
+        display: none !important;
+       }
+
+   
+    @media (prefers-color-scheme: dark) {
+        .container{
+            background-color: #0B1F33;
+        }
+
+        .nav-bar {
+            background-color: #0B1F33;  
+        }
+
+        .light-img {
+            display: none !important;
+        }
+
+        .dark-img {
+            display: block !important;
+        }
+
+        .light-arrow {
+            display: none !important;
+        }
+
+        .grid-column1,
+        .four-column1,
+        .arrive {
+            background-color: #0B1F33 !important ;
+            color: #FFFFFF !important;
+        }
+
+        .explore {
+            color: #f2f2f2 !important;
+        }
+
+        .dark-arrow {
+            display: inline-block !important;
+        }
+
+        .deal-section,
+        .footer {
+            background-color: #0B1F33 !important;
+            color: #f2f2f2 !important;
+        }
+
+        .three-column2 {
+            background-color: #0B1F33 !important;
+            color: #f2f2f2 !important;
+        }
+
+        .shoe, .free {
+            color: #f2f2f2 !important;
+        }
+
+
+ 
+    }
     </style>
 </head>
 <body>
-    <center class="wrapper">
+    <center class="wrapper"> 
      <table width="100%" 
      cellspacing="0" 
      cellpadding="0"
@@ -112,17 +177,23 @@
          
         <!-- Nav bar -->
     <tr>
-        <td style="padding: 8px 28px;">
+        <td style="padding: 8px 28px;" class="nav-bar">
             <table width="100%" border="0" cellpadding="0" cellspacing="0">
                 <tr>
                     <!-- Left: Hamburger Menu -->
-                    <td align="left" style="vertical-align: middle;">
+                    <td align="left" style="vertical-align: middle;"
+                     class="nav-bar">
                         <table border="0" cellpadding="0" cellspacing="0">
                             <tr>
                                 <td>
                                     <a href="#">
-                                        <img src="https://res.cloudinary.com/qyksrgfe/image/upload/v1788868389/menu-icon_brnrty.png"
-                                            width="26" alt="Hamburger icon" style="display: block;">
+                                        <!-- Light Mode Icon -->
+                                        <img src="https://res.cloudinary.com/qyksrgfe/image/upload/v1788868389/menu-icon_brnrty.png" width="26"
+                                            alt="Hamburger icon" class="light-arrow" style="display: block; width: 26px; height: auto;">
+                            
+                                        <!-- Dark Mode Icon -->
+                                        <img src="https://res.cloudinary.com/qyksrgfe/image/upload/v1790419216/hamburger-white_i5cf0l.png"
+                                            width="26" alt="Hamburger icon" class="dark-img" style="display: none; width: 26px; height: auto;">
                                     </a>
                                 </td>
                             </tr>
@@ -136,13 +207,25 @@
                                 <td style="padding-right: 15px;">
                                     <a href="#">
                                         <img src="https://res.cloudinary.com/qyksrgfe/image/upload/v1788868407/search-icon_ccblql.png"
-                                            width="28" alt="Search icon" style="display: block;">
+                                         width="28" alt="Search icon" style="display: block;"
+                                            class="light-img"
+                                         >
+                                        
+                                    <!-- Dark Mode Icon -->
+                                    <img src="https://res.cloudinary.com/qyksrgfe/image/upload/v1790419478/cart-icon-white_tak4zm.png" width="26"
+                                        alt="Hamburger icon" class="dark-img" style="display: none; width: 26px; height: auto;">
                                     </a>
                                 </td>
                                 <td>
                                     <a href="#">
                                         <img src="https://res.cloudinary.com/qyksrgfe/image/upload/v1788868420/cart-icon_dj5645.png"
-                                            width="28" alt="Cart icon" style="display: block;">
+                                            width="28" alt="Cart icon" style="display: block;"
+                                            class="light-img"
+                                            >
+                                        
+                                    <!-- Dark Mode Icon -->
+                                    <img src="https://res.cloudinary.com/qyksrgfe/image/upload/v1790419385/search-white_wcgant.png" width="26"
+                                        alt="Hamburger icon" class="dark-arrow" style="display: none; width: 26px; height: auto;">
                                     </a>
                                 </td>
                             </tr>
@@ -243,25 +326,28 @@
 
              <tr>
                 <td align="center" style="background-color: #f2f2f2;
-                            padding: 24px  0 0;">
+                            padding: 24px  0 0;" 
+                            class="grid-column1"
+                            >
                     <p style="font-size: 24px ;">Popular product</p>
                 </td>
              </tr>
 
              <tr>
-                <td class="" style="padding: 24px 16px; background-color: #f2f2f2;">
-                    <table width="100%" role="presentation">
+                <td class="grid-column1" style="padding: 24px 16px;
+                 background-color: #f2f2f2;">
+                    <table width="100%" role="presentation" class="grid-column1">
                         <tr>
-                            <td class="three-column">
+                            <td class="three-column grid-column1">
                                 <table 
                                 role="presentation"
-                                class="column" style="padding-bottom: 30px;">
+                                class="column grid-column1" style="padding-bottom: 30px;">
                                     <tr>
                                         <td>
                                             <a href="#">
                                                 <img src="https://res.cloudinary.com/qyksrgfe/image/upload/v1788914366/grid1_m6gxer.png"
                                                 width="170"
-                                                alt="">
+                                                alt="man on">
                                             </a>
                                         </td>
                                     </tr>
@@ -277,12 +363,19 @@
                                     </tr>
                                     <tr>
                                         <td align="left">
-                                            <p>
-                                                <a href="#" style="text-decoration: none;
+                                            <p class="explore">
+                                                <a href="#" class="explore" style="text-decoration: none;
                                                   color: #5355CE; font-weight: 500;
                                                 ">
                                                     Explore Collection
-                                                    <img src="https://res.cloudinary.com/qyksrgfe/image/upload/v1788914824/arrow_sh8hfs.png" alt="" width="14" style="display: inline-block;">
+                                                    <img src="https://res.cloudinary.com/qyksrgfe/image/upload/v1788914824/arrow_sh8hfs.png" alt="" width="14" class="light-img"
+                                                     style="display: inline-block;">
+
+                                                     <!-- Dark Mode Icon -->
+                                                     <img src="https://res.cloudinary.com/qyksrgfe/image/upload/v1790420222/arrow-white_hxhy3w.png" alt="arrow icon" 
+                                                     width="14" class="dark-arrow"
+                                                     style="display: none"
+                                                     >
                                                 </a>
                                             </p>
                                             
@@ -312,12 +405,15 @@
                                     <tr>
                                         <td align="left">
                                             <p>
-                                                <a href="#" style="text-decoration: none;
+                                                <a href="#" class="explore" style="text-decoration: none;
                                                 color: #5355CE; font-weight: 500;
                                                     ">
                                                     Explore Collection
-                                                    <img src="https://res.cloudinary.com/qyksrgfe/image/upload/v1788914824/arrow_sh8hfs.png" alt=""
-                                                        width="14" style="display: inline-block;">
+                                                    <img src="https://res.cloudinary.com/qyksrgfe/image/upload/v1788914824/arrow_sh8hfs.png" alt="Arrow icon" width="14" style="display: inline-block;" class="light-img">
+
+                                                        <!-- Dark Mode Icon -->
+                                                <img src="https://res.cloudinary.com/qyksrgfe/image/upload/v1790420222/arrow-white_hxhy3w.png" alt="arrow icon"
+                                                    width="14" class="dark-arrow" style="display: none">
                                                 </a>
                                             </p>
                                         </td>
@@ -346,11 +442,13 @@
                                     <tr>
                                         <td align="left">
                                             <p>
-                                                <a href="#" style="text-decoration: none;
+                                                <a href="#" class="explore" style="text-decoration: none;
                                                     color: #5355CE; font-weight: 500;">
                                                     Explore Collection
-                                                    <img src="https://res.cloudinary.com/qyksrgfe/image/upload/v1788914824/arrow_sh8hfs.png" alt=""
-                                                        width="14" style="display: inline-block;">
+                                                    <img src="https://res.cloudinary.com/qyksrgfe/image/upload/v1788914824/arrow_sh8hfs.png" alt="arrow icon" width="14" style="display: inline-block;" class="light-img">
+
+                                                    <!-- Dark Mode Icon -->
+                                                    <img src="https://res.cloudinary.com/qyksrgfe/image/upload/v1790420222/arrow-white_hxhy3w.png" alt="arrow icon" width="14" class="dark-arrow" style="display: none">
                                                 </a>
                                             </p>
                                 
@@ -367,16 +465,17 @@
              </tr>
 
              <tr>
-                <td align="center" style="padding: 40px 0 24px;">
+                <td align="center" class="deal-section"
+                style="padding: 40px 0 24px;">
                     <p style="font-size: 24px;">Best Deals for You</p>
                 </td>
              </tr>
 
              <tr>
-                <td style="padding: 8px 0 40px;">
+                <td style="padding: 8px 0 40px;" class="three-column2">
                     <table width="100%" role="presentation">
                         <tr>
-                            <td class="three-column">
+                            <td class="three-column three-column2">
 
                             <table class="column" style="padding-bottom: 30px;" role="presentation">
                                 <tr>
@@ -384,20 +483,23 @@
                                         <a href="#">
                                             <img src="https://res.cloudinary.com/qyksrgfe/image/upload/v1788920514/shoe_meyq1i.png" 
                                             width="173"
-                                            alt="">
+                                            alt="white snicker">
                                         </a>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td align="left">
-                                        <p style="font-size: 16px ; color: #3a3a3a; padding: 8px 0;">
+                                        <p style="font-size: 16px ; color: #3a3a3a; padding: 8px 0;" class="shoe">
                                             Awesome Shoes</p>
-                                        <p  style="font-size: 16px ; color: #3a3a3a;">$89</p>
+                                        <p  style="font-size: 16px;
+                                         color: #3a3a3a;" class="shoe">
+                                            $89</p>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td align="left">
-                                        <p  style="font-size: 16px ; color: #3a3a3a; padding: 4px 0;">Now $59 <span style="color: #5355CE;">-33.7%</span></p>
+                                    <td align="left" class="shoe">
+                                        <p class="shoe"  style="font-size: 16px ; color: #3a3a3a; padding: 4px 0;">Now $59 
+                                        <span class="shoe" style="color: #5355CE;">-33.7%</span></p>
                                     </td>
                                 </tr>
 
@@ -429,14 +531,14 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td align="left">
-                                        <p  style="font-size: 16px ; color: #3a3a3a; padding: 8px 0;">Awesome Shoes</p>
+                                    <td align="left" class="shoe">
+                                        <p  class="shoe" style="font-size: 16px ; color: #3a3a3a; padding: 8px 0;">Awesome Watch</p>
                                         <p>$89</p>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td align="left">
-                                        <p  style="font-size: 16px ; color: #3a3a3a; padding: 4px 0;">Now $59 <span style="color: #5355CE;">-33.7%</span></p>
+                                    <td align="left" class="shoe">
+                                        <p  class="shoe" style="font-size: 16px ; color: #3a3a3a; padding: 4px 0;">Now $59 <span class="shoe" style="color: #5355CE;">-33.7%</span></p>
                                     </td>
                                 </tr>
                             
@@ -464,19 +566,19 @@
                                     <td>
                                         <a href="#">
                                             <img src="https://res.cloudinary.com/qyksrgfe/image/upload/v1788920483/bag_y0dgdi.png" width="173"
-                                                alt="">
+                                                alt="shuttle back">
                                         </a>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td align="left">
-                                        <p style="font-size: 16px ; color: #3a3a3a; padding: 8px 0;">Awesome Shoes</p>
+                                    <td align="left" class="shoe">
+                                        <p class="shoe" style="font-size: 16px ; color: #3a3a3a; padding: 8px 0;">Awesome Bag</p>
                                         <p>$89</p>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td align="left">
-                                        <p  style="font-size: 16px ; color: #3a3a3a; padding: 4px 0;">Now $59 <span style="color: #5355CE;">-33.7%</span></p>
+                                    <td align="left" class="shoe">
+                                        <p class="shoe"  style="font-size: 16px ; color: #3a3a3a; padding: 4px 0;">Now $59 <span class="shoe" style="color: #5355CE;">-33.7%</span></p>
                                     </td>
                                 </tr>
 
@@ -549,7 +651,7 @@
              </tr>
 
             <tr>
-                <td style="padding: 40px 12px;" style="background-color: #f2f2f2;">
+                <td class="four-column1" style="padding: 40px 12px; background-color: #f2f2f2;">
                     <table width="100%" role="presentation">
 
                         <tr>
@@ -560,14 +662,17 @@
                                         <td align="center" style="padding-bottom: 8px;">
                                             <a href="#">
                                                 <img src="https://res.cloudinary.com/qyksrgfe/image/upload/v1789179088/truck_hnu3ib.png"  
-                                                width="57"
+                                                width="57" class="light-img"
                                                 alt="Delivery van">
+
+                                                <!-- Dark Mode Image -->
+                                                 <img src="https://res.cloudinary.com/qyksrgfe/image/upload/v1790419880/lorry-white_jhpb2e.png" alt="lorry icon" width="57" class="dark-img">
                                             </a>
                                         </td>
                                     </tr>
                                       <tr>
                                         <td align="center" style="padding-bottom: 8px;">
-                                            <p style="font-size: 12px; color: #3a3a3a; text-align: center; width: 95px; line-height: 1.4;">
+                                            <p class="free" style="font-size: 12px; color: #3a3a3a; text-align: center; width: 95px; line-height: 1.4;">
                                                 Free Shipping</p>
                                         </td>
                                       </tr>
@@ -577,14 +682,16 @@
                                     <tr>
                                         <td align="center" style="padding-bottom: 8px;">
                                             <a href="#">
-                                                <img src="https://res.cloudinary.com/qyksrgfe/image/upload/v1789183625/return_dx2ixu.png" width="57"
-                                                    alt="Delivery van">
+                                                <img src="https://res.cloudinary.com/qyksrgfe/image/upload/v1789183625/return_dx2ixu.png" width="57" alt="Return Icon" class="light-img">
+
+                                                <!-- Dark Mode Image -->
+                                                <img src="https://res.cloudinary.com/qyksrgfe/image/upload/v1790420029/return-white_ryk550.png" alt="lorry icon" width="57" class="dark-img">
                                             </a>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td align="center">
-                                            <p style="font-size: 12px; color: #3a3a3a; text-align: center; width: 95px; line-height: 1.4;">
+                                            <p class="free" style="font-size: 12px; color: #3a3a3a; text-align: center; width: 95px; line-height: 1.4;">
                                                 Easy Returns</p>
                                         </td>
                                     </tr>
@@ -594,14 +701,18 @@
                             <tr>
                                 <td align="center" style="padding-bottom: 8px;"> 
                                     <a href="#">
-                                        <img src="https://res.cloudinary.com/qyksrgfe/image/upload/v1789267619/lock_maty50.png" width="57"
-                                            alt="Delivery van">
+                                        <img src="https://res.cloudinary.com/qyksrgfe/image/upload/v1789267619/lock_maty50.png" width="57" alt="Lock Icon"
+                                        class="light-img">
+
+                                        <!-- Dark Mode Image -->
+                                        <img src="https://res.cloudinary.com/qyksrgfe/image/upload/v1790419958/lock_yvqspw.png" alt="lock icon"
+                                            width="57" class="dark-img">
                                     </a>
                                 </td>
                             </tr>
                             <tr>
                                 <td align="center">
-                                    <p style="font-size: 12px; color: #3a3a3a; text-align: center; width: 95px; line-height: 1.4;">
+                                    <p class="free" style="font-size: 12px; color: #3a3a3a; text-align: center; width: 95px; line-height: 1.4;">
                                         Secure Payment</p>
                                 </td>
                             </tr>
@@ -611,14 +722,16 @@
                             <tr>
                                 <td align="center" style="padding-bottom: 8px;">
                                     <a href="#">
-                                        <img src="https://res.cloudinary.com/qyksrgfe/image/upload/v1789267902/payment_b438wj.png" width="57"
-                                            alt="Delivery van">
+                                        <img src="https://res.cloudinary.com/qyksrgfe/image/upload/v1789267902/payment_b438wj.png" width="57" alt="Delivery van" class="light-img">
+
+                                        <!-- Dark Mode Image -->
+                                        <img src="https://res.cloudinary.com/qyksrgfe/image/upload/v1790419842/card-white_rf4atr.png" alt="lock icon" width="57" class="dark-img">
                                     </a>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <p style="font-size: 12px; color: #3a3a3a; text-align: center; width: 95px; line-height: 1.4;">
+                                    <p class="free" style="font-size: 12px; color: #3a3a3a; text-align: center; width: 95px; line-height: 1.4;">
                                         Flexible Payment Options</p>
                                 </td>
                             </tr>
@@ -631,18 +744,19 @@
             </tr>
 
             <tr>
-                <td style="padding: 0 12px; color: #3a3a3a; text-align: center; line-height: 1.4; background-color: #ffffff;">
+                <td class="arrive" style="padding: 0 12px; 
+                color: #3a3a3a; text-align: center; line-height: 1.4; background-color: #ffffff;">
                    <h3 style="font-size: 24px; margin: 0; ">Just Arrived</h3> 
                    <p>Discover the latest products added to our collection</p>
                 </td>
             </tr>
 
             <tr>
-                <td style="padding: 10px 30px;">
-                <table width="100%" role="presentation">
+                <td style="padding: 10px 30px;" class="arrive">
+                <table width="100%" role="presentation" class="arrive">
 
                     <tr>
-                        <td class="three-last-column">
+                        <td class="three-last-column arrive">
 
                             <table class="column" style="padding-bottom: 20px;">
                                 <tr>
@@ -699,7 +813,8 @@
             </tr>
 
             <tr>
-                <td style="background-color: #5355CE; color: #ffffff; padding: 40px 60px;">
+                <td style="background-color: #5355CE;
+                 color: #ffffff; padding: 40px 60px;" class="footer">
                     <table width="100%" role="presentation">
 
                         <tr>
